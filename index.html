@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Deuce Support</title>
+  <meta name="description" content="Support for Deuce, the simple tennis scorekeeper for iPhone and Apple Watch.">
+  <style>
+:root {
+  --green: #31c85b;
+  --blue: #0a84ff;
+  --ink: #111111;
+  --muted: #6f6f76;
+  --card: rgba(255,255,255,.88);
+  --line: #e8e8ed;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", sans-serif;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at 50% 0%, rgba(49,200,91,.11), transparent 31rem),
+    #f7f7fa;
+  line-height: 1.55;
+}
+.wrap { width: min(820px, calc(100% - 32px)); margin: 0 auto; }
+header { padding: 64px 0 28px; text-align: center; }
+.logo {
+  width: 88px; height: 88px; margin: 0 auto 18px;
+  border-radius: 24px; display: grid; place-items: center;
+  background: linear-gradient(145deg, #0f361b, #267a38);
+  color: #d8ff43; font-size: 46px;
+  box-shadow: 0 14px 35px rgba(0,0,0,.16);
+}
+h1 { margin: 0; font-size: clamp(42px, 8vw, 68px); letter-spacing: -2px; }
+.tagline { color: var(--muted); font-size: 19px; margin: 10px 0 0; }
+.green-line { width: 62px; height: 5px; background: var(--green); border-radius: 99px; margin: 18px auto 0; }
+.card {
+  background: var(--card); border: 1px solid rgba(0,0,0,.05);
+  border-radius: 26px; padding: 30px; margin: 18px 0;
+  box-shadow: 0 14px 34px rgba(0,0,0,.055);
+}
+h2 { margin-top: 0; font-size: 26px; letter-spacing: -.4px; }
+h3 { margin-bottom: 6px; }
+p { margin: 8px 0 16px; }
+a { color: var(--blue); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.button {
+  display: inline-block; background: var(--blue); color: white;
+  padding: 14px 22px; border-radius: 14px; font-weight: 700;
+}
+.button:hover { text-decoration: none; opacity: .92; }
+.notice {
+  border-left: 4px solid #ff9f0a; background: #fff8e8;
+  border-radius: 12px; padding: 14px 16px; color: #5f4800;
+}
+ul { padding-left: 22px; }
+footer { text-align: center; color: var(--muted); padding: 28px 0 48px; font-size: 14px; }
+nav { margin-top: 18px; }
+nav a { margin: 0 8px; }
+</style>
+</head>
+<body>
+  <header class="wrap">
+    <div class="logo" aria-hidden="true">🎾</div>
+    <h1>Deuce Support</h1>
+    <div class="green-line"></div>
+    <p class="tagline">Keep score without losing focus on the match.</p>
+    <nav><a href="index.html">Support</a><a href="privacy.html">Privacy Policy</a></nav>
+  </header>
+
+  <main class="wrap">
+    <section class="card">
+      <h2>How can we help?</h2>
+      <p>Deuce is a tennis scorekeeper for iPhone and Apple Watch, built to make tracking points, games, sets and completed matches quick and distraction-free.</p>
+      <p><a class="button" href="mailto:REPLACE-WITH-YOUR-EMAIL">Email Deuce Support</a></p>
+      <div class="notice"><strong>Before publishing:</strong> replace <code>REPLACE-WITH-YOUR-EMAIL</code> in this file with your support email address.</div>
+    </section>
+
+    <section class="card">
+      <h2>Frequently asked questions</h2>
+
+      <h3>How do I start a match on Apple Watch?</h3>
+      <p>Open Deuce on your Watch, choose the match format, enter the player names and begin scoring. A completed Watch match will sync back to Game History on your iPhone.</p>
+
+      <h3>My Watch match has not appeared on iPhone</h3>
+      <p>Open Game History on iPhone and pull down to refresh, or tap the three-dot menu and choose <strong>Sync from Apple Watch</strong>. Keep Bluetooth and Wi‑Fi enabled on both devices.</p>
+
+      <h3>How do I undo a point?</h3>
+      <p>Tap the undo button during a live match. Deuce restores the previous scoring state, including game and set boundaries.</p>
+
+      <h3>How do I share or delete a match?</h3>
+      <p>In Game History, swipe a match row to reveal the Share and Delete actions.</p>
+
+      <h3>Can I clear all saved matches?</h3>
+      <p>Open Game History, tap the three-dot menu and choose <strong>Clear Game History…</strong>. Deuce will ask you to confirm before deleting anything.</p>
+    </section>
+
+    <section class="card">
+      <h2>Compatibility</h2>
+      <ul>
+        <li>iPhone running iOS 17 or later</li>
+        <li>Apple Watch running watchOS 10 or later</li>
+        <li>Apple Watch companion features require a paired iPhone</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="wrap">
+    <p>© 2026 Sam Spencer. All rights reserved.</p>
+    <p>A Father &amp; Son Project — made with ❤️ by Sam &amp; Oscar.</p>
+  </footer>
+</body>
+</html>
